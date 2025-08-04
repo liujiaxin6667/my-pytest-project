@@ -1,0 +1,17 @@
+allure-pytest生成测试报告
+1.安装allure-pytest
+pip install allure-pytest
+2.生成报告数据
+pytest --alluredir=目录
+3.下载转换工具allure
+https://link.zhihu.com/?target=https%3A//github.com/allure-framework/allure2/releases
+解压allure,没有中文的目录
+把allure的bin目录,配置到环境变量中的path中
+4.生成html报告
+allure generate 数据目录 -o 报告路径 --clean
+5.查看测试报告
+allure open 报告路径
+
+
+钩子函数（公司改模板）
+使用conftest.py
